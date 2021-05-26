@@ -1,34 +1,52 @@
+/* Limpando formatações padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
 body{
-    background: #d2d2c1 url(imagens/fundo.png);
-    font: 16px Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', Helvetica,sans-serif;
+    background: #e6e6e6;
 }
 h1{
-    color: #828271;
-    font: 1.2em ;
+    color: #ffffff;
+    font-size: 2.5em;
 }
 a{
-    font:bold 17px "Lucina Sans Unicode",sans-serif;
-    text-decoration:none ;
-    color: #4b566a;
-    padding: 5px;
+    text-decoration: none;
 }
-#principal{
-    width: 900px;
-}
-#conteudo{
-    padding: 15px;
-    background: #ffff34;
-}
-#menu{
-    padding: 20px;
-    background: #c5c5b2;
-}
+a:link, a:visited{
+    padding: 15px 20px;
+    color: white;
 
-#rodape{
-    font:bold 15px Arial;
+}
+a:hover{
+    background: white;
+    color: rgb(132, 0, 255);
+}
+/*
+    Layout
+
+*/
+#area-cabecalho{
+    background: rgb(132, 0, 255);
+    padding: 15px;
     text-align: center;
 }
-.img-campanha{
-    color: #c3c3ae;
-    border: 10px solid ;
+#area-logo, #are-menu{
+    padding: 15px;
+}
+#area-principal{
+    width: 920px;
+    margin: 0 auto;
+}
+#area-postagens{
+    width: 660px;
+}
+#area-lateral{
+    width: 240px;
+}
+
+.preto{
+    color: rgba(0, 0, 0, 0.712);
 }
