@@ -4,16 +4,19 @@
     padding: 0;
 }
 body{
+    color: white;
     font-size: 1em;
     font-family: 'Trebuchet MS', Helvetica,sans-serif;
-    background: #e6e6e6;
+    background: #c3c3c3;
 }
 h1{
     color: #ffffff;
     font-size: 2.5em;
 }
-a{
+
+a{  
     text-decoration: none;
+    font-weight: bold;
 }
 a:link, a:visited{
     padding: 15px 20px;
@@ -21,7 +24,7 @@ a:link, a:visited{
 
 }
 a:hover{
-    background: white;
+
     color: rgb(132, 0, 255);
 }
 /*
@@ -29,22 +32,84 @@ a:hover{
 
 */
 #area-cabecalho{
-    background: rgb(132, 0, 255);
+    background: #000000;
+    padding: 15px;
+ 
+}
+#area-logo{
     padding: 15px;
     text-align: center;
-}
-#area-logo, #are-menu{
+    /* border: 1px solid red; */
+} 
+#area-menu{
+    width: 300px;
+    /* border: 1px solid red; */
     padding: 15px;
 }
 #area-principal{
-    width: 920px;
+    height: 501px;
+    /* border: 1px solid red; */
     margin: 0 auto;
+    background: rgb(119, 0, 255);
+   
 }
-#area-postagens{
-    width: 660px;
+#area-titulo{
+    float: left;
+    padding: 10px;
+    width:100px;
+    margin: 80px 100px;
+    /* border: 1px solid red; */
+    position: absolute;
 }
-#area-lateral{
-    width: 240px;
+#area-meio{
+    width: 500px;
+    /* border: 1px solid red; */
+    float: left;
+    position: absolute;
+    margin: 150px 80px;
+}
+#frase-titulo{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+#frase-texto{
+    font-size: 30px;
+    text-align: left;
+}
+#area-baixo{
+    width: 650px;
+   /* border: 1px solid red; */
+    float: left;
+    position: absolute;
+    margin: 290px 110px;
+    
+}
+#area-botao{
+    height: 20px;
+    width: 220px;
+    /*border: 1px solid red;*/
+    float: left;
+    margin: 380px 90px;
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+}
+#botao{
+  background: rgb(255, 49, 162);
+  border-radius: 45px;
+}
+#user{
+    width: 220px;
+   /* border: 1px solid red; */
+    float: right;
+    padding: 15px;
+
+}
+#direitos{
+    color: rgba(0, 0, 0, 0.712);
+    font-size: 15px;
+    text-align: center;
 }
 
 .preto{
