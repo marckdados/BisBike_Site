@@ -4,44 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
     <title>Login - BisBike</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: rgb(255, 255, 255);
-        }
-        .black{
-            color: black;
-        }
-        #logo{
-            font-size: 25px;
-            padding: 20px;
-            text-align: center;
-        }
-        
-    </style>
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
 </head>
 <body>
-    <div id="logo">
-        <h1 class="black">BisBike</h1>
-    </div>
-    <hr>
-    <div id="form">
-        <form action="javascript:void(0);">
-            <h1>Login</h1>
-            <div>
-            <input type="text" name="username" id="username" placeholder=" " autocomplete="off" class="form-control-material" required />
-            <label for="username">Username</label>
-            </div>
-            <div>
-            <input type="password" name="password" id="password" placeholder=" " autocomplete="off" class="form-control-material" required />
-            <label for="password">Password</label>
-            </div>
-            <button type="submit" >Login</button>
-        </form>
+    <div id="area-formulario">
+        <div id="formulario">
+            <form action="javascript:void(0);">
+                <span class="text-form">Email ou Usuário:</span>
+                <div>
+                <input type="text" name="username" id="username" placeholder=" " autocomplete="off" class="form-control-material" required />
+                <label for="username"></label>
+                </div>
+                <span class="text-form">Senha:</span>
+                <div>
+                <input type="password" name="password" id="password" placeholder=" " autocomplete="off" class="form-control-material" required />
+                <label for="password"></label>
+                </div>
+                <button type="submit" class="botaoForm" >Login</button>
+            </form>
       </div>
+    </div>
 </html>

@@ -48,10 +48,14 @@ a:hover{
 }
 #area-principal{
     height: 501px;
+    
     /* border: 1px solid red; */
-    margin: 0 auto;
-    background: rgb(119, 0, 255);
-   
+    margin: 0 auto;  
+}
+#bg-bike{
+    
+    float: top;
+    position: absolute;
 }
 #area-titulo{
     float: left;
