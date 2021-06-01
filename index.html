@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>BisBike - Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <!-- Logo -->
     <a href="index.html" class="navbar-brand"><img src="imagens/BisBike.png" width="70" height="40" alt=""></a>
     <!-- Menu Hamburguer-->
@@ -16,55 +19,76 @@
     </button>
     <!--//-->
     <!-- navegacao -->
-    <div class="collapse navbar-collapse" id="nav-target">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item pr-4">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item pr-4">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Entrar</a>
-              <!--//-->
-              <!--Dropdown Entrar-->
-              <div class="nav-item dropdown-menu pr-1">
-                  <form action="javascript:void(0);">
-                <!--//-->
-                <!-- Campo Email -->
-                    <div class="form-group">
-                        <label class="text-form mx-auto">Email ou Usuário:</label>
-                        <input class="form-control" type="email" name="username" id="username" placeholder="Seu email ou usuário" autocomplete="off" class="form-control-material" required />
-                        <small>Nunca vamos compartilhar seu email, com ninguém</small>
-                    </div>
-                    <!--//-->
-                    <!--Campo Senha-->
-                    <div class="form-group">
-                        <label class="text-form mx-auto">Senha:</label>
-                        <input class="form-control"type="password" name="password" id="password" placeholder="Senha" autocomplete="off" class="form-control-material" required />
-                        <label for="password"></label>
-                    </div>
-                    <!--//-->
-                    <!-- Separador -->
-                    <div role="separator" class="dropdown-divider"></div>
-                    <!--//-->
-                    <!-- Check Box Lembrar de mim ?-->
-                    <div class="form-group">
-                        <input class="mb-3 form-checkbox-input" type="checkbox" name="checkbox" id="">
-                        <label for="">Lembrar de mim ?</label>
-                    </div>
-                    <!--//-->
-                    <!-- Botão Entrar -->
-                    <button class="btn btn-success btn-block" type="submit" class="botaoForm" >Login</button>
-                    <!--//-->
-                </form>
-                <div role="separator" class="dropdown-divider"></div>
-              </div>
-            </li>
-          </li>
-          <li class="nav-item pr-4">
-            <a class="nav-link" href="cadastrar.html">Cadastrar</a>
-          </li>
-        </ul>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-5" >
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">About</a>
+        </li>
+        <li class="nav-item">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Recursos Premium</a></li>
+            </ul>
+        </li>
+      </ul>
     </div>
+    <!-- Entrar e Cadastrar -->
+    
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Entrar</a>
+          <ul class="dropdown-menu form-wrapper">
+            <li>
+              <form action="" method="post" >
+                <p>Logue com sua rede social</p>
+                <div class="form-group social-btn clearfix">
+                  <!--Botão Facebook-->
+                  <a class="btn btn-primary pull-left" href="#"><i class="fa fa-facebook">Facebook</i></a>
+                  <a class="btn btn-info pull-right" href="#"><i class="fa fa-twitter">Twitter</i></a>
+                </div>
+                <div class="or-separetor"><b>ou</b></div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Username" required="required">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Password" required="required">
+                </div>
+                <input type="submit" class="btn btn-primary btn-block" value="Login">
+                <div class="form-footer">
+                  <a href="#">Esqueceu a senha ?</a>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Cadastrar</a>
+          <ul class="dropdown-menu form-wrapper">					
+            <li>
+              <form action="/examples/actions/confirmation.php" method="post">
+                <p class="hint-text">Preencha o formulário para criar sua conta!</p>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Usuário" required="required">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Senha" required="required">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Confirme a Senha" required="required">
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline"><input type="checkbox" required="required"> Eu aceito com os <a href="#">Termos &amp; Condições</a></label>
+                </div>
+                <input type="submit" class="btn btn-primary btn-block" value="Cadastrar">
+              </form>
+            </li>
+          </ul>
+        </li>
+      </ul>
   </nav>
     </div>
     <div id="area-principal">
