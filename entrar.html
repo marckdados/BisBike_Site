@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - BisBike</title>
-    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 </head>
-<body>
-    <div id="area-formulario">
-        <div id="formulario">
+<body class="bg-light">
+    <div>
+        <div>
             <form action="javascript:void(0);">
-                <span class="text-form">Email ou Usuário:</span>
-                <div>
-                <input type="text" name="username" id="username" placeholder=" " autocomplete="off" class="form-control-material" required />
-                <label for="username"></label>
+                
+                <div class="form-group">
+                    <!-- Campo Email -->
+                    <label class="text-form">Email ou Usuário:</label>
+                    <input class="form-control" type="email" name="username" id="username" placeholder="Seu email ou usuário" autocomplete="off" class="form-control-material" required />
+                    <small>Nunca vamos compartilhar seu email, com ninguém</small>
                 </div>
-                <span class="text-form">Senha:</span>
-                <div>
-                <input type="password" name="password" id="password" placeholder=" " autocomplete="off" class="form-control-material" required />
-                <label for="password"></label>
+                <div class="form-group">
+                    <label class="text-form">Senha:</label>
+                    <input class="form-control"type="password" name="password" id="password" placeholder="Senha" autocomplete="off" class="form-control-material" required />
+                    <label for="password"></label>
                 </div>
-                <button type="submit" class="botaoForm" >Login</button>
+                <div class="form-group">
+                    <input class="mb-3 form-checkbox-input" type="checkbox" name="checkbox" id="">
+                    <label for="">Lembrar de mim ?</label>
+                </div>
+                <button class="btn btn-outline-success" type="submit" class="botaoForm" >Login</button>
             </form>
       </div>
     </div>
