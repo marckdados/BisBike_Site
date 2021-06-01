@@ -1,2 +1,7 @@
-# Meu_Site
-Colocando em prática o que foi aprendido com meus curso.
+### Projeto BisBike Site
+Fazendo o site do BisBike com:
+- HTML
+- CSS
+- Bootstrap
+- Java
+
