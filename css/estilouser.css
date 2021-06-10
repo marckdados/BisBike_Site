@@ -1,0 +1,14 @@
+.nav{
+    height: 50px;
+}
+.tamanhoBorder{
+    width: 50px;
+}
+.main{
+    width: 50%;
+    margin: auto;
+}
+.perfilUser{
+    width: 50px;
+    background: rgb(0, 183, 255);
+}
