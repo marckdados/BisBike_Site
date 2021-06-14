@@ -59,9 +59,9 @@ function validarLogin(){
 function fazerCadastro(){
     event.preventDefault()
     let url = "https://bisbike-backend.herokuapp.com/usuario/cadastrar"
-    let userName = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-    let email = document.getElementById("email").value;
+    let userName = document.getElementById("usuarioCadastro").value;
+    let password = document.getElementById("senhaCadastro").value;
+    let email = document.getElementById("emailCadastro").value;
     let body = {
         "usuario": userName,
         "senha": password ,
