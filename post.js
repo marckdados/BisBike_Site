@@ -11,7 +11,7 @@ function fazPostLogin(url,body){
         if (this.readyState != 4) return;
         if (this.status == 200) {
             var data = JSON.parse(this.responseText);
-            window.location.href = "home.html";
+            window.location.href = "area-usuario.html";
              return data
             // we get the returned data
         }
