@@ -63,7 +63,8 @@
           <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Cadastrar</a>
           <ul class="dropdown-menu form-wrapper">					
             <li>
-              <form action="/examples/actions/confirmation.php" method="post">
+              <script src= "post.js"></script>
+              <form onsubmit="fazerCadastro()">
                 <p class="hint-text">Preencha o formulário para criar sua conta!</p>
                 <div class="form-group">
                   <input type="email" class="form-control" placeholder="Email" required="required" id="email">
