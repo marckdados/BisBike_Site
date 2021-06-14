@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="icon" href="">
 
-    <title>Album example for Bootstrap</title>
-
+    <title>BisBike</title>
+    
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
 
     <!-- Bootstrap core CSS -->
@@ -21,34 +21,34 @@
   <body>
 
     <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
-              </ul>
-            </div>
-          </div>
+      <nav class= "navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a href="area-usuario.html" class="navbar-brand ">BisBike</a>
+        <div class="collapse navbar-collapse " id="navbarCollapse">
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active pr-2">
+              <a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i></a>
+            </li>
+            <li class="nav-item pr-2">
+              <a class="nav-link" href="#"><i class="bi bi-chat-dots-fill"></i></a>
+            </li>
+            <li class="nav-item pr-2">
+              <a class="nav-link disabled" href="home.html"><i class="bi bi-bicycle"></i></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active pr-2">
+              <a class="nav-link" href="">Bem Vindo Bismarck</a>
+            </li>
+            <li class="nav-item active pr-2">
+              <a class="nav-link" href=""></a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="navbar navbar-light bg-white box-shadow">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <strong>BisBike</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
+    </nav>
     </header>
 
     <main role="main">
@@ -58,15 +58,14 @@
           <h1 class="jumbotron-heading">Bem Vindo ao BisBike!</h1>
           <p class="lead text-muted">Crie e compartilhe suas viagens com o BisBike!!!</p>
           <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            <a href="createRote.html" class="btn btn-primary my-2">Criar rota</a>
           </p>
         </div>
       </section>
 
       <div class="album py-5 bg-light">
         <div class="container">
-
+          
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
@@ -74,6 +73,7 @@
                 <div class="card-body">
                   <p class="card-text">Partida: Praça de boa viagem</p>
                   <p class="card-text">Destino: Recife Antigo</p>
+                  <p class="card-text">Data e Hora: 09/10/2021</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
