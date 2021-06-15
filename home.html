@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="">
-
+    <script src="localStorageAll.js"></script>
     <title>BisBike</title>
     
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
@@ -18,8 +18,7 @@
     <link href="album.css" rel="stylesheet">
   </head>
 
-  <body>
-
+  <body onload="getName()" >
     <header>
       <nav class= "navbar navbar-expand-md navbar-light bg-light fixed-top">
         <a href="area-usuario.html" class="navbar-brand ">BisBike</a>
@@ -41,7 +40,7 @@
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active pr-2">
-              <a class="nav-link" href="">Bem Vindo Bismarck</a>
+              <a class="nav-link" href="">Bem Vindo <span id="nomeUsuario"></span></a>
             </li>
             <li class="nav-item active pr-2">
               <a class="nav-link" href=""></a>

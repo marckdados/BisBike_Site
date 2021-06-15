@@ -11,6 +11,8 @@ function fazPostLogin(url,body){
         if (this.readyState != 4) return;
         if (this.status == 200) {
             var data = JSON.parse(this.responseText);
+            localStorage.setItem("idUsuario", data.idUsuario);
+            localStorage.setItem("usuario", data.usuario);
             window.location.href = "area-usuario.html";
              return data
             // we get the returned data
