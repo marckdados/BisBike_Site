@@ -16,7 +16,7 @@ function buscarTrajetosAll(){
           <div class="card-body">
             <p class="card-text">Partida: ${element.partida}</p>
             <p class="card-text">Destino:  ${element.destino}</p>
-            <p class="card-text">Data e Hora:  ${element.dataHora}</p>
+            <p class="card-text">Data e Hora:  ${element.destino}</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -27,6 +27,5 @@ function buscarTrajetosAll(){
           </div>
         </div>
       </div>`
-    });
- return  _retorno;
+    })
 }
