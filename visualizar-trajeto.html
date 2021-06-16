@@ -6,6 +6,7 @@
         <meta name="author" content="">
         <link rel="icon" href="">
         <script src="localStorageAll.js"></script>
+        <script src="get.js"></script>
 
         <title>BisBike</title>
         
@@ -16,9 +17,8 @@
     
         <!-- Custom styles for this template -->
         <link href="album.css" rel="stylesheet">
-      </head>
-
-      <body onload="getName()" >
+    </head>
+    <body onload="buscarTrajetoUnico(),getName()" >
         <header>
             <nav class= "navbar navbar-expand-md navbar-light bg-light fixed-top">
               <a href="area-usuario.html" class="navbar-brand ">BisBike</a>
@@ -49,32 +49,14 @@
               </div>
           </nav>
           </header>
-        <main role="main">
-
+          <main role="main">
             <section class="jumbotron text-center">
               <div class="container">
                 <h1 class="jumbotron-heading">Crie sua rota com o BisBike:</h1>
                 <p class="lead text-muted">Crie e compartilhe suas viagens com o BisBike!!!</p>
                 <script  src= "post.js"></script>
-                <form onsubmit="cadastrarTrajeto()">
-                    <div class="form-group">
-                      <label for="examples">Ponto de partida</label>
-                      <input type="text" class="form-control" id="pontoPartida" aria-describedby="emailHelp" placeholder="Ex: Rua da moeda, em frente ao sushi digital">
-                    </div>
-                    <div class="form-group">
-                        <label for="examples">Destino </label>
-                        <input type="text" class="form-control" id="pontoDestino" aria-describedby="emailHelp" placeholder="Ex: Praça de Boa viagem">
-                    </div>      
-                    <div class="form-group">
-                        <label for="examples">Url Imagem </label>
-                        <input type="text" class="form-control" id="urlImagem" aria-describedby="emailHelp" placeholder="Ex: https://i.imgur.com/68mnLql.png">
-                    </div>    
-                    <div class="form-group">
-                        <label for="examples">Horario e dia partida </label>
-                        <input type="text" class="form-control" id="horarioDiaPartida" aria-describedby="emailHelp" placeholder="Ex: 23:35 25/02/2021">
-                    </div>      
-                    <button type="submit" class="btn btn-primary">Criar rota!</button>
-                  </form>
+                <div id="listaTrajeto">            
+                </div>               
               </div>
             </section>
         </main>
