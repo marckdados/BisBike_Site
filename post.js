@@ -36,7 +36,10 @@ function fazPostCadastro(url,body){
     request.onreadystatechange = function () {
         if (this.readyState != 4) return;
         if (this.status == 200) {
-            window.location.href = "home.html";
+            var data = JSON.parse(this.responseText);
+            localStorage.setItem("idUsuario", data.idUsuario);
+            localStorage.setItem("usuario", data.usuario);
+            window.location.href = "area-usuario.html";
              return data
             // we get the returned data
         }

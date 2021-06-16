@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="">
+        <script src="localStorageAll.js"></script>
+        <script src="get.js"></script>
+
+        <title>BisBike</title>
+        
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+    
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Custom styles for this template -->
+        <link href="album.css" rel="stylesheet">
+    </head>
+    <body onload="buscarTrajetoUnico(),getName()" >
+        <header>
+            <nav class= "navbar navbar-expand-md navbar-light bg-light fixed-top">
+              <a href="area-usuario.html" class="navbar-brand ">BisBike</a>
+              <div class="collapse navbar-collapse " id="navbarCollapse">
+                <form class="form-inline mt-2 mt-md-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active pr-2">
+                    <a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i></a>
+                  </li>
+                  <li class="nav-item pr-2">
+                    <a class="nav-link" href="#"><i class="bi bi-chat-dots-fill"></i></a>
+                  </li>
+                  <li class="nav-item pr-2">
+                    <a class="nav-link disabled" href="home.html"><i class="bi bi-bicycle"></i></a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active pr-2">
+                    <a class="nav-link" href="">Bem Vindo <span id="nomeUsuario"></span></a>
+                  </li>
+                  <li class="nav-item active pr-2">
+                    <a class="nav-link" href=""></a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+          </header>
+          <main role="main">
+            <section class="jumbotron text-center">
+              <div class="container">
+                <h1 class="jumbotron-heading">Crie sua rota com o BisBike:</h1>
+                <p class="lead text-muted">Crie e compartilhe suas viagens com o BisBike!!!</p>
+                <script  src= "post.js"></script>
+                <div id="listaTrajeto">            
+                </div>               
+              </div>
+            </section>
+        </main>
+    </body>
+</html>
