@@ -1,11 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilouser.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <title>BisBike</title>
     
@@ -24,11 +28,11 @@
       <nav class= "navbar navbar-expand-md navbar-light bg-light fixed-top">
         <a href="area-usuario.html" class="navbar-brand ">BisBike</a>
         <div class="collapse navbar-collapse " id="navbarCollapse">
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <form class="form-inline ml-auto">
+            <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
           </form>
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto border border-success">
             <li class="nav-item active pr-2">
               <a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i></a>
             </li>
@@ -38,10 +42,11 @@
             <li class="nav-item pr-2">
               <a class="nav-link disabled" href="home.html"><i class="bi bi-bicycle"></i></a>
             </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
             <li class="nav-item active pr-2">
-              <a class="nav-link" href="">Bem Vindo Bismarck</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Bem-Vindo Bismarck</a>
+              <ul class="dropdown-menu dropdown-menu-right mr-5">
+                <li><a class="dropdown-item bg-danger active" href="#"><i class="bi bi-box-arrow-right "></i> Sair</a></li>
+              </ul>
             </li>
             <li class="nav-item active pr-2">
               <a class="nav-link" href=""></a>
@@ -215,7 +220,7 @@
     <footer class="text-muted">
       <div class="container">
         <p class="float-right">
-          <a href="#">Back to top</a>
+          <a href="#">Voltar ao topo</a>
         </p>
         <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
         <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
@@ -230,5 +235,8 @@
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
