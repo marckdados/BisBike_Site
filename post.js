@@ -39,7 +39,7 @@ function fazPostCadastro(url,body){
             var data = JSON.parse(this.responseText);
             localStorage.setItem("idUsuario", data.idUsuario);
             localStorage.setItem("usuario", data.usuario);
-            window.location.href = "area-usuario.html";
+            window.location.href = "criarPerfil.html";
              return data
             // we get the returned data
         }
@@ -68,6 +68,52 @@ function fazPostCadastroTrajeto(url,body){
         }
         if (this.status == 500) {
             window.alert("Não foi possivel cadastrar esta rota");          
+        }
+    };
+    
+    return request.responseText
+}
+function fazPostCadastroPublicacao(url,body){
+    body = JSON.stringify(body)
+    console.log("BODY: ", body)
+    let request = new XMLHttpRequest();
+    
+    request.open("POST",url,true);
+    request.setRequestHeader("Content-type","application/json");
+    let resultado = request.send(body)
+    console.log(resultado)
+    request.onreadystatechange = function () {
+        if (this.readyState != 4) return;
+        if (this.status == 200) {
+            window.location.href = "area-usuario.html";
+             return data
+            // we get the returned data
+        }
+        if (this.status == 500) {
+            window.alert("Não foi possivel publicar");          
+        }
+    };
+    
+    return request.responseText
+}
+function fazPostCadastroPerfil(url,body){
+    body = JSON.stringify(body)
+    console.log("BODY: ", body)
+    let request = new XMLHttpRequest();
+    
+    request.open("POST",url,true);
+    request.setRequestHeader("Content-type","application/json");
+    let resultado = request.send(body)
+    console.log(resultado)
+    request.onreadystatechange = function () {
+        if (this.readyState != 4) return;
+        if (this.status == 200) {
+            window.location.href = "area-usuario.html";
+             return data
+            // we get the returned data
+        }
+        if (this.status == 500) {
+            window.alert("Não foi possivel publicar");          
         }
     };
     
@@ -117,4 +163,36 @@ function cadastrarTrajeto(){
         "dataHora": horarioDiaPartida
     }
      fazPostCadastroTrajeto(url,body);
+}
+function cadastrarPublicacao(){
+    event.preventDefault()
+    let url = "https://bisbike-backend.herokuapp.com/publicacao/cadastrar"
+    let texto = document.getElementById("texto").value;
+    let idUsuario = localStorage.getItem("idUsuario");
+    let body = {
+        "usuarioDomain": {
+            "idUsuario": idUsuario
+        },
+        "texto": texto
+    }
+    fazPostCadastroPublicacao(url,body);
+}
+
+
+function cadastrarPerfil(){
+    event.preventDefault()
+    let url = "https://bisbike-backend.herokuapp.com/perfil/cadastrar"
+    let nomePessoa = document.getElementById("nomePessoa").value;
+    let urlImagemPerfil = document.getElementById("urlImagemPerfil").value;
+    let idUsuario = localStorage.getItem("idUsuario");
+    let descricao = document.getElementById("descricao").value;
+    let body = {
+        "usuarioDomain": {
+            "idUsuario": idUsuario
+        },
+        "nome": nomePessoa,
+        "urlImagemPerfil": urlImagemPerfil,
+        "descricao" : descricao
+    }
+    fazPostCadastroPerfil(url,body);
 }
